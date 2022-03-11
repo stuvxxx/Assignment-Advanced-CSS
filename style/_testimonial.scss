@@ -1,0 +1,46 @@
+.testimonial-frame {
+  width: 897px;
+  height: 1046px;
+  background-color: $background;
+  @include flexCol(center);
+  .testimonial-container {
+    border-radius: $testiBorder;
+    box-shadow: 5px 5px 15px 5px #00000038;
+    margin: 30px 60px;
+    /* the grid */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 670px 0px 326px;
+  }
+  .top {
+    font-size: 48px;
+    padding: $testiPadding $testiPadding 0px $testiPadding;
+    line-height: 70px;
+    color: rgba(0, 0, 0, 0.685);
+    background-color: white;
+    border-radius: $testiBorder $testiBorder 0 0;
+    @include flexCol(baseline);
+  }
+  .mid {
+    z-index: 1;
+    @include flexCol(center);
+    img {
+      border-radius: 50%;
+      padding: 10px;
+      background-color: rgb(255, 255, 255);
+    }
+  }
+  .bot {
+    background-color: #686de0;
+    padding-top: 15px;
+    border-radius: 0 0 $testiBorder $testiBorder;
+    color: white;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    @include flexCol(center);
+    a {
+      color: rgba(255, 255, 255, 0.404);
+      letter-spacing: 6px;
+    }
+  }
+}

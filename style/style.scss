@@ -1,0 +1,24 @@
+@import "./varimix";
+@import "./testimonial";
+@import "./portofolio";
+@import "./media";
+@import "./social";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* .testimonial-container,
+.portefolio,
+.social-container {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+* a {
+  text-decoration: none;
+}
+
+body {
+  background: $background;
+  overflow-x: hidden;
+}
