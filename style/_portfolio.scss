@@ -1,0 +1,40 @@
+.portfolio {
+  background: $background;
+  padding-top: $portPadding;
+  padding-bottom: $portPadding;
+  /* the grid */
+  display: grid;
+  grid-template-columns: repeat(3, $portW);
+  grid-template-rows: repeat(3, $portH);
+  align-items: center;
+  justify-content: center;
+  grid-gap: 30px;
+  .port-items {
+    @include flexCol(center);
+    background-color: black;
+    height: $portH;
+    width: $portW;
+    border-radius: 10%;
+    &:hover .donnyimg {
+      opacity: 0%;
+    }
+    &:hover button {
+      z-index: 1;
+    }
+    button {
+      background-color: $background;
+      position: absolute;
+      height: 40px;
+      width: 100px;
+      transition: 0.5s;
+      z-index: -1;
+    }
+    .donnyimg {
+      width: 360px;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 10%;
+      transition: 1s;
+    }
+  }
+}

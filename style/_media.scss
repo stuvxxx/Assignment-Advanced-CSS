@@ -1,0 +1,50 @@
+@media screen and (max-width: 1200px) {
+  .portfolio {
+    grid-template-columns: repeat(2, $portW);
+    grid-template-rows: repeat($portH);
+    grid-gap: 15px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .portfolio {
+    grid-template-columns: repeat(1, $portW);
+    grid-template-rows: repeat(auto, $portH);
+    grid-gap: 10px;
+  }
+  .testimonial-frame .top {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .testimonial-frame .top {
+    font-size: 35px;
+    line-height: 50px;
+  }
+  .bot {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .testimonial-frame .top {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .bot {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .testimonial-frame .top {
+    font-size: 30px;
+    line-height: 40px;
+    padding: 10px;
+  }
+  .bot {
+    font-size: 8px;
+  }
+}
