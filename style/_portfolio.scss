@@ -1,4 +1,4 @@
-.portofolio {
+.portfolio {
   background: $background;
   padding-top: $portPadding;
   padding-bottom: $portPadding;
@@ -9,26 +9,32 @@
   align-items: center;
   justify-content: center;
   grid-gap: 30px;
-  .porto-items {
+  .port-items {
     @include flexCol(center);
+    background-color: black;
     height: $portH;
     width: $portW;
     border-radius: 10%;
-    background: url("donnygoed.jpg");
-    background-size: cover;
-    transition: 1s;
+    &:hover .donnyimg {
+      opacity: 0%;
+    }
+    &:hover button {
+      z-index: 1;
+    }
     button {
       background-color: $background;
+      position: absolute;
       height: 40px;
       width: 100px;
-      position: relative;
+      transition: 0.5s;
       z-index: -1;
     }
-    &:hover {
-      background: rgb(6, 6, 36);
-      button {
-        z-index: 1;
-      }
+    .donnyimg {
+      width: 360px;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 10%;
+      transition: 1s;
     }
   }
 }

@@ -1,7 +1,6 @@
 @import "./varimix";
 @import "./testimonial";
-@import "./portofolio";
-@import "./media";
+@import "./portfolio";
 @import "./social";
 
 * {
@@ -10,7 +9,7 @@
 }
 
 * .testimonial-container,
-.portefolio,
+.portfolio,
 .social-container {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -22,3 +21,5 @@ body {
   background: $background;
   overflow-x: hidden;
 }
+
+@import "./media";

@@ -1,9 +1,9 @@
 /* All */
-/* Portofolio */
+/* Portfolio */
 /* Social */
 /* Testimonial */
 .testimonial-frame {
-  width: 897px;
+  max-width: 897px;
   height: 1046px;
   background-color: #c3cfe2a9;
   display: -webkit-box;
@@ -11,28 +11,28 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .testimonial-frame .testimonial-container {
   border-radius: 50px;
   -webkit-box-shadow: 5px 5px 15px 5px #00000038;
-          box-shadow: 5px 5px 15px 5px #00000038;
+  box-shadow: 5px 5px 15px 5px #00000038;
   margin: 30px 60px;
   /* the grid */
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
   -ms-grid-rows: 670px 0px 326px;
-      grid-template-rows: 670px 0px 326px;
+  grid-template-rows: 670px 0px 326px;
 }
 
 .testimonial-frame .top {
@@ -47,14 +47,14 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: baseline;
-      -ms-flex-pack: baseline;
-          justify-content: baseline;
+  -ms-flex-pack: baseline;
+  justify-content: baseline;
 }
 
 .testimonial-frame .mid {
@@ -64,14 +64,14 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .testimonial-frame .mid img {
@@ -92,14 +92,14 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .testimonial-frame .bot a {
@@ -107,89 +107,72 @@
   letter-spacing: 6px;
 }
 
-.portofolio {
+.portfolio {
   background: #c3cfe2a9;
   padding-top: 60px;
   padding-bottom: 60px;
   /* the grid */
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (360px)[3];
-      grid-template-columns: repeat(3, 360px);
-  -ms-grid-rows: (400px)[3];
-      grid-template-rows: repeat(3, 400px);
+  -ms-grid-columns: (360px) [3];
+  grid-template-columns: repeat(3, 360px);
+  -ms-grid-rows: (400px) [3];
+  grid-template-rows: repeat(3, 400px);
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   grid-gap: 30px;
 }
 
-.portofolio .porto-items {
+.portfolio .port-items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: black;
   height: 400px;
   width: 360px;
   border-radius: 10%;
-  background: url("donnygoed.jpg");
-  background-size: cover;
-  -webkit-transition: 1s;
-  transition: 1s;
 }
 
-.portofolio .porto-items button {
-  background-color: #c3cfe2a9;
-  height: 40px;
-  width: 100px;
-  position: relative;
-  z-index: -1;
+.portfolio .port-items:hover .donnyimg {
+  opacity: 0%;
 }
 
-.portofolio .porto-items:hover {
-  background: #060624;
-}
-
-.portofolio .porto-items:hover button {
+.portfolio .port-items:hover button {
   z-index: 1;
 }
 
-@media screen and (max-width: 1024px) {
-  .portofolio {
-    -ms-grid-columns: (360px)[2];
-        grid-template-columns: repeat(2, 360px);
-    -ms-grid-rows: ()[400px];
-        grid-template-rows: repeat(400px);
-    grid-gap: 15px;
-  }
+.portfolio .port-items button {
+  background-color: #c3cfe2a9;
+  position: absolute;
+  height: 40px;
+  width: 100px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: -1;
 }
 
-@media screen and (max-width: 600px) {
-  .portofolio {
-    -ms-grid-columns: (360px)[1];
-        grid-template-columns: repeat(1, 360px);
-    -ms-grid-rows: (400px)[auto];
-        grid-template-rows: repeat(auto, 400px);
-    grid-gap: 10px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .portofolio {
-    overflow-x: auto;
-  }
+.portfolio .port-items .donnyimg {
+  width: 360px;
+  height: 400px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 10%;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .social-container {
@@ -198,11 +181,11 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
   overflow-x: hidden;
 }
 
@@ -212,14 +195,14 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  -ms-flex-pack: left;
+  justify-content: left;
   padding-left: 15px;
   color: white;
   height: 50px;
@@ -230,18 +213,18 @@
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-transform: translateX(190px);
-          transform: translateX(190px);
+  transform: translateX(190px);
 }
 
 .social-container .button:hover {
   -webkit-transform: translateX(0px);
-          transform: translateX(0px);
+  transform: translateX(0px);
 }
 
 .social-container .button p {
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
   padding-left: 40px;
   font-size: 15px;
   text-decoration: underline;
@@ -281,7 +264,7 @@
 }
 
 * .testimonial-container,
-.portefolio,
+.portfolio,
 .social-container {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -293,5 +276,60 @@
 body {
   background: #c3cfe2a9;
   overflow-x: hidden;
+}
+
+@media screen and (max-width: 1200px) {
+  .portfolio {
+    -ms-grid-columns: (360px) [2];
+    grid-template-columns: repeat(2, 360px);
+    -ms-grid-rows: () [400px];
+    grid-template-rows: repeat(400px);
+    grid-gap: 15px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .portfolio {
+    -ms-grid-columns: (360px) [1];
+    grid-template-columns: repeat(1, 360px);
+    -ms-grid-rows: (400px) [auto];
+    grid-template-rows: repeat(auto, 400px);
+    grid-gap: 10px;
+  }
+  .testimonial-frame .top {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .testimonial-frame .top {
+    font-size: 35px;
+    line-height: 50px;
+  }
+  .bot {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .testimonial-frame .top {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .bot {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .testimonial-frame .top {
+    font-size: 30px;
+    line-height: 40px;
+    padding: 10px;
+  }
+  .bot {
+    font-size: 8px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

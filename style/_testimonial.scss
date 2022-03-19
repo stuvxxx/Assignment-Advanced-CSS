@@ -1,5 +1,5 @@
 .testimonial-frame {
-  width: 897px;
+  max-width: 897px;
   height: 1046px;
   background-color: $background;
   @include flexCol(center);
